@@ -28,13 +28,17 @@ public class BubbleSort {
 			for(int j=0;j<n-i-1;j++){
 				if(a[j]>a[j+1])
 				{
-					int temp=a[j];
-					a[j]=a[j+1];
-					a[j+1]=temp;
+					swap(a, j);
 				}
 			}
 		}
 		return a;
+	}
+
+	public static void swap(int[] a, int j) {
+		int temp=a[j];
+		a[j]=a[j+1];
+		a[j+1]=temp;
 	}
 	
 	public static int[] bubbleSort2(int[] a,int n){
@@ -42,15 +46,14 @@ public class BubbleSort {
 			for(int j=0;j<=i-1;j++){
 			if(a[j]>a[j+1])
 			{
-				int temp=a[j];
-				a[j]=a[j+1];
-				a[j+1]=temp;
+				swap(a, j);
 			}
 			}
 		}
 		return a;
 	}
 	
+	//When Array is already sorted then use a boolean variable to skip 
 	public static int[] bubbleSortListAlreadySorted(int[] a,int n){
 		boolean swapped=true;
 		for(int i=n-1;i>=0 && swapped;i--){
@@ -58,9 +61,7 @@ public class BubbleSort {
 			for(int j=0;j<=i-1;j++){
 				if(a[j]>a[j+1])
 				{
-					int temp=a[j];
-					a[j]=a[j+1];
-					a[j+1]=temp;
+					swap(a, j);
 					swapped=true;
 				}
 				
