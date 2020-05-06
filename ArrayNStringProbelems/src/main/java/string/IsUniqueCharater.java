@@ -25,7 +25,8 @@ private static boolean isUniqueChar(String str) {
 	
 }
 
-//
+//Reduce space complexity by using a factor of eight by using a bit operator Left Shift
+
 static boolean isUniqueChar1(String str) {
 	int checker=0;
 	for(int i=0;i<str.length();i++) {
