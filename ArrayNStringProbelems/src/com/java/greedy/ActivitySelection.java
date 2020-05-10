@@ -16,7 +16,7 @@ class Activity implements Comparable<Activity>{
 	
 	@Override
 	public int compareTo(Activity a1) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub     
 		//if finish time is also equal then you can use it like this 
 		int i=this.finish-a1.finish;
 		if(i==0) {

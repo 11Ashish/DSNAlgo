@@ -4,7 +4,7 @@ package com.java.greedy;
 import java.util.Arrays; 
 import java.util.Comparator; 
 
-//Greedy approach 
+//Greedy approach      
 public class FractionalKnapSackGreedy 
 { 
 	// Time complexity O(n log n) 
