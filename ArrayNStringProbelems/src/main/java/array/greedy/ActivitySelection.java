@@ -1,6 +1,6 @@
 package main.java.array.greedy;
 
-//The following implementation assumes that the activities 
+//The following implementation assumes that the activities  
 //are already sorted according to their finish time 
 import java.util.*; 
 import java.lang.*; 
