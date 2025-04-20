@@ -1,4 +1,4 @@
-package dy.onedimentional;
+package main.java.dp.onedimentional;
 
 import java.util.Arrays;
 
